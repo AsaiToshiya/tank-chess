@@ -35,7 +35,7 @@ function App() {
       {spaces.map((columns, i) => (
         <div className="board-row">
           {columns.map((space, i) => (
-            <button className="space">{isObstacle(space) && "X"}</button>
+            <div className="space">{isObstacle(space) && "X"}</div>
           ))}
         </div>
       ))}
